@@ -28,6 +28,7 @@ export default {
             },
             plugins: [terser()],
         },
+        
     ],
     external:['react','@parrotjs/react-hooks','resize-observer-polyfill'], 
     plugins: [
