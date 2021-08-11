@@ -1,6 +1,6 @@
 {
   "name": "@parrotjs/react-resize-observer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/parrotreactresizeobserver.cjs.js",
   "module": "dist/parrotreactresizeobserver.esm.js",
@@ -51,7 +51,7 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "dependencies": {
-    "@parrotjs/react-hooks": "^0.1.9", 
+    "@parrotjs/react-hooks": "^0.1.9",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
