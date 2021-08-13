@@ -21,7 +21,7 @@ const ResizeObserver = (props) => {
             resizeObserver.current = null;
         }
     }, []);
-    const handleRef = reactHooks.useForkRef(childNode);
+    const handleRef = reactHooks.useForkRef(childNode, children.ref);
     const handleResize = React.useCallback((entries) => {
         const target = entries[0].target;
         const { width, height } = target.getBoundingClientRect();

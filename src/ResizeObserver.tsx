@@ -25,7 +25,7 @@ const ResizeObserver=(props:IResizeObserverProps)=>{
         }
     },[]);
 
-    const handleRef=useForkRef(childNode);
+    const handleRef=useForkRef(childNode,children.ref);
 
     const handleResize=useCallback((entries)=>{
  
@@ -38,8 +38,7 @@ const ResizeObserver=(props:IResizeObserverProps)=>{
             height!==rect.height
         ){
             const size={ width,height };  
-            setRect(size);
-
+            setRect(size); 
             if(onResize){
                 Promise.resolve().then(()=>{
                     onResize?.(
